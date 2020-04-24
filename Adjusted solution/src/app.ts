@@ -19,7 +19,7 @@ app.use("/api/users", userAPIRouter);
 app.use("/gameapi", gameAPIRouter);
 
 app.get("/api/dummy", (req, res) => {
-    res.json({ msg: "Hello" })
+    res.json({ msg: "Welcome to Teamfinder", author: "made by Camilla Staunstrup" })
 })
 
 app.use(function (req, res, next) {

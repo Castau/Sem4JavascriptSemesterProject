@@ -47,8 +47,6 @@ router.post('/addPost', async (req, res, next) => {
         const taskSolution = req.body.taskSolution
         const lon = req.body.lon
         const lat = req.body.lat
-        console.log("REQUESTBODY **************")
-        console.log(req.body)
         const result = await gameFacade.addPost(name, task, isUrl, taskSolution, lon, lat)
 
         res.json(result)
